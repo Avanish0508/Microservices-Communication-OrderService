@@ -25,6 +25,11 @@ dependencies {
 	testCompileOnly 'org.projectlombok:lombok'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	testAnnotationProcessor 'org.projectlombok:lombok'
+
+
+
+	implementation project(':notification-proto')
+	implementation 'net.devh:grpc-client-spring-boot-starter:3.1.0.RELEASE' // gives you @GrpcClient
 }
 
 tasks.named('test') {
